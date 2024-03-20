@@ -1,0 +1,106 @@
+/* Reset CSS */
+* {
+    font-family: monospace; /* Menggunakan font monospace secara global */
+    margin: 0; /* menggunakan margin 0 secara global */
+    padding: 0; /* menggunakan padding 0 secara global */
+    box-sizing: border-box;/* menggunakan padding 0 secara global */
+    color: white; /* Warna teks global */
+  }
+  
+  /* Styling Body */
+  body {
+    display: flex; /*set container menjadi fleksibel agar dapat di tata menggunakan property seperti align-item,justify-content,flex direction*/
+    justify-content: center; /* mengatur posisi secara  horizontal (kiri/kanan/tengah/gap)*/
+    align-items: center; /*mengatur posisi secara vertical*/
+    height: 100vh; /* tinggi body 100% dari viewport */
+    backdrop-filter: blur(5px); /* Efek blur latar belakang */
+    background: url("https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.1923524562.1696941069&semt=ais") no-repeat center/cover; /* url untuk gambar , no-repeat untuk agar gambar tidak berulang  jika ukuran gambar lebih kecil dari container,center untuk menampilkan backround di tengah,cover untuk mengset gambar memenuhi container */
+  }
+  /* Styling Container Utama */
+  .parent {
+    display: flex;/*set container menjadi fleksibel agar dapat di tata menggunakan property seperti align-item,justify-content,flex direction*/
+    flex-direction: column; /*untuk setting tata letak child component ke bawah */
+    align-items: center;/*mengatur posisi secara vertical*/
+    justify-content: center;/* mengatur posisi secara  horizontal (kiri/kanan/tengah/gap)*/
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .7), rgba(0, 0, 0, .4), rgba(0, 0, 0, .1), rgba(0, 0, 0, .1), rgba(0, 0, 0, .4), rgba(0, 0, 0, .7)),
+     url("https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.1923524562.1696941069&semt=ais") no-repeat center/cover;/*untuk backgound warna yang memiliki opacity, url untuk gambar , no-repeat untuk agar gambar tidak berulang  jika ukuran gambar lebih kecil dari container,center untuk menampilkan backround di tengah,cover untuk mengset gambar memenuhi container */
+    border-radius: 10px; /* Border radius  kelengkungan sudut*/
+    padding: 50px; /* Padding  gap antara border dengan content*/
+  }
+  
+  /* Styling Judul */
+  h2 {
+    margin-bottom: 20px; /* Margin bawah */
+    font-size: 30px; /* Ukuran font */
+  }
+  
+  /* Styling Form */
+  .parent>form {
+    display: flex; /*set container menjadi fleksibel agar dapat di tata menggunakan property seperti align-item,justify-content,flex direction*/
+    flex-direction: column; /*untuk setting tata letak child component ke bawah */
+    gap: 2rem; /* Jarak antar elemen */
+  }
+  
+  /* Styling Input */
+  input {
+    border: none;/*untuk menghilangkan border dari input*/
+    border-bottom: 1px solid white; /* Garis bawah */
+    outline: 0; /*untuk menghilangkan border dari input saat input dalam keadaan active*/
+    font-size: 1.2rem; /* Ukuran font */
+    background: transparent; /* Latar belakang transparan */
+  }
+  
+  /* Styling Placeholder Input */
+  input::placeholder {
+    font-size: 1.2rem; /* Ukuran font */
+    color: white; /* Warna teks */
+  }
+  /* Styling Tombol Form */
+  form>button {
+    border: none; /*untuk menghilangkan border dari button */
+    background-color: transparent;/* Latar belakang transparan */
+    border: 1px solid white; /* Border solid */
+    color: white; /*setting color dari buuton*/
+    padding: 5px 10px; /* Padding */
+    border-radius: 5px; /* Border radius */
+    font-weight: 700; /* Ketebalan font */
+    cursor: pointer; /* Kursor pointer */
+    font-size: 1.4rem; /* Ukuran font */
+    transition-duration: .9s; /* Durasi transisi */
+  }
+  
+  /* Hover Tombol Form */
+  form>button:hover {
+    background-color: white; /* Warna latar belakang hover */
+    color: rgb(61, 60, 60); /* Warna teks hover */
+  }
+  
+  /* Styling Tombol Lainnya */
+  .parent > button {
+    border: none; /*set  untuk menghilangkan border/tidak terlihat*/
+    color: rgb(206, 203, 203); /* Warna teks */
+    background: transparent; /*set background transparan*/
+    cursor: pointer; /*setting untuk cursor tangan*/
+    font-weight: 600; /* Ketebalan font */
+    font-size: .9rem ; /* Ukuran font */
+    margin-top: 20px; /* Margin atas */
+  }
+  
+  /* Element Tersembunyi */
+  .hidden {
+    display: none; /* Element tersembunyi */
+  }
+  
+  /* Efek Animasi */
+  .upflow {
+    position: absolute; /* Posisi absolut  / keluar dari flow  / keluar dari parent */
+  }
+  
+  /* Styling Tombol Toggle */
+#toogle1,#toogle2 {
+    border: none; /*untuk menghilangkan border*/
+    background-color: transparent; /*set backround tanpa warna /transparan*/
+    cursor: pointer; /* Kursor pointer */
+    transform: translateX(-15px); /* Translasi horizontal */
+  }
+  

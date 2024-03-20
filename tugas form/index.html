@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tugas form</title>
+  </head>
+  <body>
+    <div id="loginform" class="parent">
+      <h2>Login</h2>
+      <form action="">
+        <input type="text" placeholder="Username" required />
+        <div>
+          <input
+            type="password"
+            id="passwordInput1"
+            placeholder="password"
+            required
+          />
+          <button id="toogle1" class="upflow">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-eye-slash"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7 7 0 0 0-2.79.588l.77.771A6 6 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755q-.247.248-.517.486z"
+              />
+              <path
+                d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829zm-2.943 1.299.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829"
+              />
+              <path
+                d="M3.35 5.47q-.27.24-.518.487A13 13 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7 7 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-eye hidden"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"
+              />
+              <path
+                d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"
+              />
+            </svg>
+          </button>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+      <button id="switch1">not have account ?</button>
+    </div>
+    <div id="registerform" class="parent hidden">
+      <h2>Registrasi</h2>
+      <form action="">
+        <input type="text" placeholder="Nama" required />
+        <input type="date" placeholder="tanggal lahir" required />
+        <input type="text" placeholder="Username" required />
+        <div>
+          <input
+            type="password"
+            id="passwordInput2"
+            placeholder="set password"
+            required
+          />
+          <button id="toogle2" class="upflow">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-eye-slash"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7 7 0 0 0-2.79.588l.77.771A6 6 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755q-.247.248-.517.486z"
+              />
+              <path
+                d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829zm-2.943 1.299.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829"
+              />
+              <path
+                d="M3.35 5.47q-.27.24-.518.487A13 13 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7 7 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-eye hidden"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"
+              />
+              <path
+                d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"
+              />
+            </svg>
+          </button>
+        </div>
+        <button type="submit">Register</button>
+      </form>
+      <button id="switch2">have account ?</button>
+    </div>
+    <script>
+      var switchButton1 = document.getElementById("switch1") // ambil element dengan id switch1 dan simpan di variabel var(dapat diubah ubah)
+      var switchButton2 = document.getElementById("switch2") // ambil element dengan id switch2 dan simpan di variabel var(dapat diubah ubah)
+      let toogle1 = document.querySelector("#toogle1") // ambil element sesuai selector di css jika id awali '#' jika class awali '.' dan simpan di variabel let(hampir sama dengan var namun lebih terbaru)
+      let toogle2 = document.querySelector("#toogle2") // ambil element sesuai selector di css jika id awali '#' jika class awali '.' dan simpan di variabel let(hampir sama dengan var namun lebih terbaru)
+      let passwordInput1 = document.querySelector("#passwordInput1") // ambil element sesuai selector di css jika id awali '#' jika class awali '.' dan simpan di variabel let(hampir sama dengan var namun lebih terbaru)
+      let passwordInput2 = document.querySelector("#passwordInput2") // ambil element sesuai selector di css jika id awali '#' jika class awali '.' dan simpan di variabel let(hampir sama dengan var namun lebih terbaru)
+      // function yang bertugas mengganti antara form login dan registrasi,function ini adalah arrow function Expression(fungsi yang disimpan didalam variabel) tanpa parameter
+      const switchForms = () => {
+        document.getElementById("loginform").classList.toggle("hidden")
+        document.getElementById("registerform").classList.toggle("hidden")
+      }
+      //function yang bertugas melakukan update element setelah diswitch dengan function switchForms,sama seperti diatas ini adalah arrow function.
+      const updateElements = () => {
+        //pertama dilakukan pengecekan apakah element dengan id loginform memiliki class hidden atau tidak dengan bantuan function bawaan claslist contains
+        if (document.getElementById("loginform").classList.contains("hidden")) {
+          //jika ada maka akan menjalankan code dibawah ini
+          toogle1 = document.querySelector("#toogle2")
+          passwordInput1 = document.querySelector("#passwordInput2")
+        } else {
+          //jika tidak ada makan akan menjalankan kode dibawah ini
+          toogle1 = document.querySelector("#toogle1")
+          passwordInput1 = document.querySelector("#passwordInput1")
+        }
+      }
+      //merupakan event listener(menerima 2 parameter yaitu event dan callback) pada button dengan id switch1 ,jika button diclick maka akan mengembalikan sebuah  arrow function yang didalamnya memanggil fungsi switchforms dan updateforms untuk dijalankan
+      switchButton1.addEventListener("click", () => {
+        switchForms()
+        updateElements()
+      });
+      //merupakan event listener(menerima 2 parameter yaitu event dan callback) pada button dengan id switch2 ,jika button diclick maka akan mengembalikan sebuah  arrow function yang didalamnya memanggil fungsi switchforms dan updateforms untuk dijalankan
+      switchButton2.addEventListener("click", () => {
+        switchForms()
+        updateElements()
+      })
+      /*merupakan event listener(menerima 2 parameter yaitu event dan callback) pada button dengan id toogle1 ,jika button diclick maka akan mengembalikan sebuah  arrow function yang didalamnya memanggil fungsi switchforms dan updateforms untuk dijalankan
+      ,callback disini yang berupa arrow function menerima parameter berupa e atau kepanjnagan dari event (jika ada hanya 1 parameter diperbolehkan tanpa kurung) yang berguna untuk mengakses fungsi dar object event yaitu prevendefault */
+      toogle1.addEventListener("click", e => {
+        //fungsi untuk mencegah perilaku bawaan dari suatu peristiwa (event) agar tidak terjadi.seperti refresh otomatis page saat button diklik
+        e.preventDefault()
+        //memanggil selector berdasarkan class yang berada didalam element dengan selector tonggle1,lalu memanggil fungsi toogle untuk bertukar class hidden
+        toogle1.querySelector(".bi-eye-slash").classList.toggle("hidden")
+        toogle1.querySelector(".bi-eye").classList.toggle("hidden")
+        // memanggil variabel passwordinput dan mengubah tipe password berdasarkan atribut type dengan ternary operator(sama dengan if else),lalu menetapkannya sebagai nilai baru dari atribut type
+        passwordInput1.type =
+          passwordInput1.type === "password" ? "text" : "password"
+      })
+      toogle2.addEventListener("click", e => {
+        e.preventDefault()
+        //memanggil selector berdasarkan class yang berada didalam element dengan selector tonggle2,lalu memanggil fungsi toogle untuk bertukar class hidden
+        toogle1.querySelector(".bi-eye-slash").classList.toggle("hidden")
+        toogle1.querySelector(".bi-eye").classList.toggle("hidden")
+        passwordInput2.type =
+          passwordInput2.type === "password" ? "text" : "password"
+      })
+    </script>
+  </body>
+</html>
