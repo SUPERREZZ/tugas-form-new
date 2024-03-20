@@ -3,7 +3,7 @@
     font-family: monospace; /* Menggunakan font monospace secara global */
     margin: 0; /* menggunakan margin 0 secara global */
     padding: 0; /* menggunakan padding 0 secara global */
-    box-sizing: border-box;/* menggunakan padding 0 secara global */
+    box-sizing: border-box;/*digunakan untuk menentukan bagaimana browser menghitung dimensi kotak elemen.nilai 'border-box', total lebar dan tinggi elemen termasuk padding dan border dihitung sebagai bagian dari lebar dan tinggi elemen itu sendiri.*/
     color: white; /* Warna teks global */
   }
   
